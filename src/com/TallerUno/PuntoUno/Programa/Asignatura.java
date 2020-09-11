@@ -7,11 +7,10 @@ public class Asignatura
     private Estudiante estudiantes;
     private Docente docente;
 
-    public Asignatura(String nombre, int numeroCreditos, Estudiante estudiantes, Docente docente)
+    public Asignatura(String nombre, int numeroCreditos, Docente docente)
     {
         this.nombre = nombre;
         this.numeroCreditos = numeroCreditos;
-        this.estudiantes = estudiantes;
         this.docente = docente;
     }
 
