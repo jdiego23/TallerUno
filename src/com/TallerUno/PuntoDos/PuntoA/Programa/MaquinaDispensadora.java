@@ -101,4 +101,25 @@ public class MaquinaDispensadora
             System.out.println("La cantidad del producto " + unidades.getNombre() + " es " + unidades.getUnidadesProducto());
         });
     }
+
+    public void aumentarCantidad(String codigo, byte cantidadesAumentar)
+    {
+        int unidades ;
+        for (int i= 0;i<lProducto.size(); i++)
+        {
+            if (codigo == lProducto.get(i).getCodigo())
+            {
+                if (lProducto.get(i).getUnidadesProducto() <= 8)
+                {
+                    unidades = lProducto.get(i).getUnidadesProducto();
+                    unidades = unidades +cantidadesAumentar;
+                    lProducto.get(i).setUnidadesProducto(unidades);
+                    System.out.println("La cantidad final del producto " + lProducto.get(i).getNombre() + " es " + lProducto.get(i).getUnidadesProducto());
+                }
+                else{
+                    System.out.println("La maquina dispensadora ha llegado a su capacidad maxima que es 8");
+                }
+            }
+        }
+    }
 }

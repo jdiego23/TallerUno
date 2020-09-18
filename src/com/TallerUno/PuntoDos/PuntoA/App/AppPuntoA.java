@@ -23,9 +23,10 @@ public class AppPuntoA
         Producto chocorramo = new Producto("Chocorramo","cho10",8,2.000);
 
         nutresa.getlProducto().addAll(Arrays.asList(doritos,malta,chocolatina,chicles,jumbo,gomitas,galletas,boloquesos,hit,chocorramo));
-        nutresa.dispensadar("hi9");
+        nutresa.dispensadar(hit.getCodigo());
         nutresa.consultarAgotados();
-        nutresa.consultarUnidades("ch3");
+        nutresa.consultarUnidades(chocolatina.getCodigo());
         nutresa.consultarProductos(nutresa.getlProducto());
+        nutresa.aumentarCantidad(boloquesos.getCodigo(), (byte) 4);
     }
 }
