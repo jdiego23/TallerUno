@@ -82,6 +82,7 @@ public class MaquinaDispensadora
 
         });
     }
+
     public void consultarUnidades(String codigo)
     {
         lProducto.forEach(unidades->
@@ -90,7 +91,14 @@ public class MaquinaDispensadora
             {
                 System.out.println("El producto " + unidades.getNombre() + " tiene:" + unidades.getUnidadesProducto() + " Unidades");
             }
+        });
+    }
 
+    public void consultarProductos(ArrayList<Producto> lProducto)
+    {
+        lProducto.forEach(unidades ->
+        {
+            System.out.println("La cantidad del producto " + unidades.getNombre() + " es " + unidades.getUnidadesProducto());
         });
     }
 }

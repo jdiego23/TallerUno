@@ -26,5 +26,6 @@ public class AppPuntoA
         nutresa.dispensadar("hi9");
         nutresa.consultarAgotados();
         nutresa.consultarUnidades("ch3");
+        nutresa.consultarProductos(nutresa.getlProducto());
     }
 }
