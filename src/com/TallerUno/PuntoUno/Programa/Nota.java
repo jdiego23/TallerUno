@@ -49,7 +49,7 @@ public class Nota
         int tamaño = notasSeguimiento.size();
         double NotaSeguimiento = 0;
 
-        for (int i = 0; i <= tamaño; i++)
+        for (int i = 0; i < tamaño; i++)
         {
             NotaSeguimiento = NotaSeguimiento + notasSeguimiento.get(i);
         }
